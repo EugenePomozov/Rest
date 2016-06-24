@@ -20,11 +20,9 @@ import by.epamlab.beans.Customer;
 
 @Path("customer")
 public class Service {
-	//private static ICustomerDAO dao = CustomerFactory.getClassFromFactory();	
-	
+
 	@Context
 	private ServletContext context; 
-//	private CustomerMemoryImpl impl  = new CustomerMemoryImpl();
 	private Data data = new Data();
 	@GET
 	@Produces(MediaType.APPLICATION_XML)
